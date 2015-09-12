@@ -1,0 +1,21 @@
+$TTL 3h
+
+
+5.16.172.in-addr.arpa. IN SOA ns1.foo.org.nz. kakkr1.student.op.ac.nz. (
+
+            2; serial number
+            3h; slave
+            1h;slave retry
+            3d;slave expires
+            1h;negative ttl
+)
+
+  ;2 NAMESERVER RECORDS
+5.16.172.in-addr.arpa. IN NS ns1.foo.org.nz.
+5.16.172.in-addr.arpa. IN NS ns2.foo.org.nz.
+
+;PTR
+
+12.5.16.172.in-addr.arpa. IN PTR bsd-server.foo.org.nz.
+2.5.16.172.in-addr.arpa. IN PTR router1.foo.org.nz.
+
